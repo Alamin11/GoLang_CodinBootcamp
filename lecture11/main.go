@@ -2,15 +2,18 @@ package main
 
 import "fmt"
 
-type Book struct{
+/*type Book struct{
 	Title string 
 	Author string 
 	ISBN string
 	Price float32
 	Pages int
-}
+}*/
 
 func main(){
+	
+
+	/*
 	var b1 Book 
 	b1.Title ="Go Book"
 	b1.Author ="Caleb Droxy"
@@ -33,6 +36,12 @@ func main(){
 		Group : "Science",
 }
 	fmt.Println(b1)
-	fmt.Println(student)
+	fmt.Println(student)*/
+	var w1 Weight
+	fmt.Println(w1)
+
+	
+
+
 //fmt.Println("Hello Go")
 }
