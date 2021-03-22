@@ -17,7 +17,22 @@ func main(){
 	b1.ISBN = "12233-347"
 	b1.Price = 150.34
 	b1.Pages = 300
+	
 
+	//Another Struct type Annonymas
+	student := struct{
+		Name string
+		Id int
+		Class string
+		Group string
+	}{
+
+		Name : "Al Amin",
+		Id : 12205063,
+		Class : "B.Sc",
+		Group : "Science",
+}
 	fmt.Println(b1)
+	fmt.Println(student)
 //fmt.Println("Hello Go")
 }
