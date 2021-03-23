@@ -1,3 +1,3 @@
-package main 
+package main
 
-type Weight float32
+type Jata float32
