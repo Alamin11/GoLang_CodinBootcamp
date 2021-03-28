@@ -30,6 +30,20 @@ func main() {
 	content := "fileName and contet are taking from the argument"
 	isFalse := createFile("another2.txt", content)
 	fmt.Println(isFalse)
+
+	//checking if file is existing or not
+	fi, err := os.Stat("another.txt")
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	fmt.Println(fi.ModTime().Clock())
+	fmt.Println(fi.ModTime().Date())
+	fmt.Println(fi.ModTime().GobEncode())
+	fmt.Println(fi.IsDir())
+	fmt.Println(fi.ModTime())
+	fmt.Println(fi.Name())
+	fmt.Println(fi.Size())
+	fmt.Println(fi.Sys())
 }
 
 //Creating a function to create file
