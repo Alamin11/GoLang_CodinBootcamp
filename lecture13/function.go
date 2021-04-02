@@ -79,5 +79,6 @@ fmt.Println("Area of rectangle is : ", rectangle(20, 50))
 fmt.Println("Output of rectangleMulti function : ")
 fmt.Println(rectangleMulti(30, 10))
 
+01678171501
 
 }
