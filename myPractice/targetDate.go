@@ -13,9 +13,10 @@ func DateNbDays(a0 float64, a float64, p float64) int {
 	}
 	return count
 }
-func (t Time) AddDate(years int, months int, days int) Time {
+
+/*func (t Time) AddDate(years int, months int, days int) Time {
 	year, month, day := t.Date()
-}
+}*/
 func main() {
 	days := DateNbDays(100, 101, 0.98)
 	fmt.Println(days)
