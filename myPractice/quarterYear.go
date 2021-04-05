@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func mul(month int) int {
 	x := float32(month)
 	if x/4.0 > 0.0 && x/4.0 <= 1.0 {
@@ -11,7 +13,7 @@ func mul(month int) int {
 	}
 }
 
-// func main() {
-// 	res := mul(11)
-// 	fmt.Println(res)
-// }
+func main() {
+	res := mul(11)
+	fmt.Println(res)
+}
