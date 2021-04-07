@@ -4,19 +4,22 @@ import "fmt"
 
 func FindOdd(seq []int) int {
 	// your code here
-	dict := make(map[int]int)
+	//temp := 0
 	count := 1
-	var num, c int
-
-	for _, num = range seq {
-		dict[num] = count + 1
-		if count%2 == 1 {
-			c = num
+	res := 0
+	for i := 0; i < len(seq); i++ {
+		//temp = seq[i]
+		for j := 0; j < len(seq); j++ {
+			if seq[i] == seq[j] {
+				count++
+			}
 		}
-
+		if count%2 == 1 {
+			res = seq[i]
+			break
+		}
 	}
-
-	return c
+	return res
 }
 func main() {
 	var inputArray = []int{10, 12, 10, 12, 10}
