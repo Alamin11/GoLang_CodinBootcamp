@@ -22,7 +22,7 @@ func FindOdd(seq []int) int {
 	return res
 }
 func main() {
-	var inputArray = []int{10, 12, 10, 12, 10}
+	var inputArray = []int{5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10}
 	x := FindOdd(inputArray)
 	fmt.Print(x)
 }
