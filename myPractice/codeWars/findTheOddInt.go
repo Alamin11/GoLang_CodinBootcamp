@@ -5,7 +5,7 @@ import "fmt"
 func FindOdd(seq []int) int {
 	// your code here
 	//temp := 0
-	count := 1
+	count := 0
 	res := 0
 	for i := 0; i < len(seq); i++ {
 		//temp = seq[i]
