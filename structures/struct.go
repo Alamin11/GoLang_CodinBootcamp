@@ -30,4 +30,19 @@ func main() {
 	a2 := Address{city: "Chuadanga"}
 	fmt.Println("New address :", a2)
 
+	//Annonymus struct using struct literals
+	struct1 := struct {
+		name       string
+		age        int
+		occupation string
+		salary     float32
+	}{"Alamin", 28, "Teacher", 30000.0}
+
+	fmt.Println(struct1)
+
+	//custom data type accessing from another file
+	var v1 Ami
+	v1 = 10.0
+	fmt.Println(v1)
+
 }
