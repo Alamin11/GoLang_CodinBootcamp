@@ -4,7 +4,7 @@ import "fmt"
 
 func runef() {
 	var ch rune
-	ch = 'a'
+	ch = 'A'
 	fmt.Println(ch)
 	fmt.Printf("%c ", ch)
 }
