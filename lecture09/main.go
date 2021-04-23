@@ -23,4 +23,8 @@ func main() {
 	fmt.Println(false && true)
 	fmt.Println(false && false)
 	fmt.Println(!true)
+
+	//Accessing the runef
+	fmt.Println("Rune example: ")
+	runef()
 }
