@@ -7,7 +7,7 @@ import (
 
 func main() {
 	//array declaration
-	var strArray [3]string
+	var strArray [2]string
 	var intArray [3]int
 
 	//Printing the data type of array using 'reflect' package
@@ -22,6 +22,17 @@ func main() {
 	//Printing the length of array
 	fmt.Println(len(strArray), len(intArray))
 	//Assigning value to the array
-	// arr[0] = "Sam"
-	// arr[1] = ""
+	strArray[0] = "Sam"
+	strArray[1] = "Micky"
+
+	intArray[0] = 90
+	intArray[1] = 110
+	intArray[2] = 10
+	//Printing aLL THE ARRAY ELEMENT/ITEM
+	fmt.Println(strArray)
+	fmt.Println(intArray)
+
+	//Accesing the item of array using array name and index
+	fmt.Println(intArray[0], strArray[1])
+
 }
