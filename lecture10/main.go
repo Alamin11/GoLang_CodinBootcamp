@@ -17,7 +17,10 @@ func main() {
 	fmt.Println(reflect.ValueOf(intArray).Kind())
 
 	// Printing type using default package verbs
-	fmt.Printf("%T %T", strArray, intArray)
+	fmt.Printf("%T %T\n", strArray, intArray)
+
+	//Printing the length of array
+	fmt.Println(len(strArray), len(intArray))
 	//Assigning value to the array
 	// arr[0] = "Sam"
 	// arr[1] = ""
