@@ -1,0 +1,33 @@
+Installation of SSL software to send email securely using cmd
+
+To start tls certificate:
+openssl s_client -connect smtp.gmail.com:587 -quiet -starttls smtp
+
+appPass: txxyvtzhlkivjomw
+appPassbase64: AdHh4eXZ0emhsa2l2am9tdwG==
+emailbase64:sYWxhbWluY3NlY3VAZ21haWwuY29tG
+
+generating hexCode of mailID and pass using golang
+AAGFsYW1pbmNzZWN1QGdtYWlsLmNvbQBibDAxOTYwMjM4NzIzNm51bWJlcgG==
+
+Authentication :
+Method#1: Non secure way
+auth plain base64 generated code
+MAIL FROM: <senderEmail>
+RCPT TO: <reciever email>
+DATA
+FROM: <SenderMail>
+TO: <recieverEmail>
+Subject: Subject of the mail
+mail body
+regards
+.
+
+Method#2 : Secured way
+auth login
+username in base64 code
+pass in base64 code
+Later on repeat of previous steps
+
+
+
