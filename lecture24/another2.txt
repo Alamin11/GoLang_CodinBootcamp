@@ -1,1 +1,0 @@
-fileName and contet are taking from the argument

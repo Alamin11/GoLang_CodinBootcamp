@@ -1,1 +1,0 @@
-This a file that is created using go lang
