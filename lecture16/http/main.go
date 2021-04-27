@@ -7,17 +7,19 @@ import (
 )
 
 func main() {
+	//Listening to the request
 	nl, err := net.Listen("tcp", ":8888")
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
-
+	//Accepting the request
 	conn, err := nl.Accept()
 	if err != nil {
 		fmt.Println(err.Error())
 	}
 	bs := make([]byte, 1024)
+	//reading the request as byte string 
 	n, err := conn.Read(bs)
 	if err != nil {
 		fmt.Println(err.Error())
