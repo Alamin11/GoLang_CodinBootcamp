@@ -1,0 +1,10 @@
+body := `<!DOCTYPE html>
+			<html>
+			<head><title>Dummy server</title></head>
+			<body><h1>Welcome to my website</h1></body>
+			</html>
+	`
+	resp := "HTTP/1.1 200 OK \r\n" +
+		"Content-Length : %d \r\n" +
+		"Content-Type: text/html\r\n" +
+		"\r\n %s"
