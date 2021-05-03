@@ -7,25 +7,21 @@ import (
 
 func main() {
 	fs := http.FileServer(http.Dir("./assets"))
-	http.Handle("/res/", http.StripPrefix("/res/", fs))
+	http.Handle("/resourse/", http.StripPrefix("/resourse/", fs))
 	http.HandleFunc("/", home)
 	http.HandleFunc("/about", about)
 	http.HandleFunc("/contact", contact)
-
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":8888", nil)
 }
-
 func home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Well come to my website's home page ")
+	fmt.Fprintf(w, "Welcome to my website")
+}
+func contact(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Welcome to my website. This is my contact page")
 }
 
 func about(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	//fmt.Fprintf(w, "<img src=\"venom.jpg\"/>")
-
-	fmt.Fprintf(w, "<img src=\"res/venom.jpg\" width=\"700px\" height=\"500px\">")
-}
-
-func contact(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Well come to my website's contact page ")
+	//fmt.Fprintf(w, "Welcome to my website")
+	fmt.Fprintf(w, "<img src=\"resourse/venom.jpg\"width=\"750px\" height=\"500px\"/>")
 }
