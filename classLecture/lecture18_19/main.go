@@ -103,7 +103,7 @@ func request(w http.ResponseWriter, r *http.Request) {
 	qs := " INSERT INTO `request` (`id`, `name`, `company`, `email`, `status`) VALUES (NULL, '%s', '%s', '%s', '1');"
 	sql := fmt.Sprintf(qs, name, company, email)
 	insert, err := db.Query(sql)
- 
+
 	// if there is an error inserting, handle it
 	if err != nil {
 		panic(err.Error())
