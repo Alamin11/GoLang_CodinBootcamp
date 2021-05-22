@@ -8,6 +8,7 @@ import (
 
 var tpl *template.Template
 
+//parsing multiple files using parseglobe func using Must func to handle error
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/*"))
 }
